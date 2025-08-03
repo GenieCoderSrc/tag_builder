@@ -11,12 +11,7 @@ class RattingSmallTag extends StatelessWidget {
     return InkWell(
       onTap: onPressed,
       child: Container(
-        padding: const EdgeInsets.only(
-          left: 5,
-          right: 5,
-          bottom: 3,
-          top: 3,
-        ),
+        padding: const EdgeInsets.only(left: 5, right: 5, bottom: 3, top: 3),
         decoration: BoxDecoration(
           color: Theme.of(context).primaryColorLight,
           borderRadius: const BorderRadius.only(
@@ -28,9 +23,9 @@ class RattingSmallTag extends StatelessWidget {
         child: Text(
           data,
           style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                color: Colors.white,
-                fontWeight: FontWeight.w600,
-              ),
+            color: Colors.white,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
     );

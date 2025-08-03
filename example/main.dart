@@ -12,9 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Tag Builder Example',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: const TagExamplePage(),
     );
   }
@@ -26,9 +24,7 @@ class TagExamplePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Tag Builder Examples'),
-      ),
+      appBar: AppBar(title: const Text('Tag Builder Examples')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
@@ -71,26 +67,17 @@ class TagExamplePage extends StatelessWidget {
 
               const Text('Status Tag:'),
               const SizedBox(height: 8),
-              AppTag(
-                'Status',
-                type: TagType.status,
-              ),
+              AppTag('Status', type: TagType.status),
               const SizedBox(height: 16),
 
               const Text('Offer Tag:'),
               const SizedBox(height: 8),
-              AppTag(
-                'Offer',
-                type: TagType.offer,
-              ),
+              AppTag('Offer', type: TagType.offer),
               const SizedBox(height: 16),
 
               const Text('Gray Tag:'),
               const SizedBox(height: 8),
-              AppTag(
-                'Gray',
-                type: TagType.gray,
-              ),
+              AppTag('Gray', type: TagType.gray),
               const SizedBox(height: 16),
 
               const Text('Chip Tag:'),
@@ -104,10 +91,7 @@ class TagExamplePage extends StatelessWidget {
 
               const Text('Rating Small Tag:'),
               const SizedBox(height: 8),
-              AppTag(
-                '4.5',
-                type: TagType.rateSmall,
-              ),
+              AppTag('4.5', type: TagType.rateSmall),
             ],
           ),
         ),

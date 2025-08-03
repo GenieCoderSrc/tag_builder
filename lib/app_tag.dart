@@ -21,17 +21,11 @@ enum TagType {
   gray,
   chip,
   rate,
-  rateSmall
+  rateSmall,
 }
 
 class AppTag extends StatelessWidget {
-  const AppTag(
-    this.data, {
-    super.key,
-    this.type,
-    this.icon,
-    this.onPressed,
-  });
+  const AppTag(this.data, {super.key, this.type, this.icon, this.onPressed});
 
   final String data;
   final TagType? type;
@@ -45,9 +39,10 @@ class AppTag extends StatelessWidget {
         return PrimaryTag(data: data, onPressed: onPressed);
       case TagType.primaryIcon:
         return PrimaryIconTag(
-            data: data,
-            onPressed: onPressed,
-            icon: icon ?? const Icon(Icons.check));
+          data: data,
+          onPressed: onPressed,
+          icon: icon ?? const Icon(Icons.check),
+        );
       case TagType.outLine:
         return OutLineTag(data: data, onPressed: onPressed);
       case TagType.status:
@@ -61,10 +56,7 @@ class AppTag extends StatelessWidget {
       case TagType.rateSmall:
         return RattingSmallTag(data: data, onPressed: onPressed);
       default:
-        return InkWell(
-          onTap: onPressed,
-          child: Container(),
-        );
+        return InkWell(onTap: onPressed, child: Container());
     }
   }
 }

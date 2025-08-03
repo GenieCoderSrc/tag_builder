@@ -12,16 +12,9 @@ class ChipTag extends StatelessWidget {
     return InkWell(
       onTap: onPressed,
       child: Container(
-        padding: const EdgeInsets.only(
-          top: 3,
-          bottom: 3,
-          left: 6,
-          right: 6,
-        ),
+        padding: const EdgeInsets.only(top: 3, bottom: 3, left: 6, right: 6),
         decoration: BoxDecoration(
-          borderRadius: const BorderRadius.all(
-            Radius.circular(10),
-          ),
+          borderRadius: const BorderRadius.all(Radius.circular(10)),
           color: Theme.of(context).dividerColor,
         ),
         child: Row(
@@ -30,11 +23,10 @@ class ChipTag extends StatelessWidget {
               Padding(padding: const EdgeInsets.only(right: 3), child: icon),
             Text(
               data,
-              style: Theme.of(context)
-                  .textTheme
-                  .bodySmall
-                  ?.copyWith(color: Theme.of(context).colorScheme.onSecondary),
-            )
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                color: Theme.of(context).colorScheme.onSecondary,
+              ),
+            ),
           ],
         ),
       ),
