@@ -29,6 +29,8 @@ This package provides multiple pre-designed tag widgets like PrimaryTag, OutLine
 Add this to your `pubspec.yaml`:
 
 ```yaml
+resolution: workspace
+
 dependencies:
   tag_builder: ^0.0.1  # Replace with latest version
 ```
