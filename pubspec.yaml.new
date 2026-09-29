@@ -1,0 +1,15 @@
+name: tag_builder
+description: "
+  A simple Flutter package to easily create and customize multiple types of tag widgets 
+  like primary tags, outlined tags, status tags, chip tags, and rating badges. 
+  Lightweight, theme-adaptive, and easy to integrate into any Flutter project."
+version: 0.0.2
+homepage: https://github.com/GenieCoderSrc/tag_builder
+repository: https://github.com/GenieCoderSrc/tag_builder
+issue_tracker: https://github.com/GenieCoderSrc/tag_builder/issues
+
+
+environment:
+  sdk: \x27>=3.6.0 <4.0.0\x27
+  resolution: workspace
+    flutter: ">=3.0.0"
