@@ -20,9 +20,9 @@ class PrimaryIconTag extends StatelessWidget {
       label: Text(
         data,
         style: Theme.of(context).textTheme.bodySmall?.copyWith(
-          color: Colors.white,
-          fontWeight: FontWeight.w600,
-        ),
+              color: Colors.white,
+              fontWeight: FontWeight.w600,
+            ),
       ),
     );
   }

@@ -24,8 +24,8 @@ class ChipTag extends StatelessWidget {
             Text(
               data,
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                color: Theme.of(context).colorScheme.onSecondary,
-              ),
+                    color: Theme.of(context).colorScheme.onSecondary,
+                  ),
             ),
           ],
         ),

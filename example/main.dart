@@ -41,7 +41,6 @@ class TagExamplePage extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 16),
-
               const Text('Primary Icon Tag:'),
               const SizedBox(height: 8),
               AppTag(
@@ -53,7 +52,6 @@ class TagExamplePage extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 16),
-
               const Text('Outline Tag:'),
               const SizedBox(height: 8),
               AppTag(
@@ -64,22 +62,18 @@ class TagExamplePage extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 16),
-
               const Text('Status Tag:'),
               const SizedBox(height: 8),
               AppTag('Status', type: TagType.status),
               const SizedBox(height: 16),
-
               const Text('Offer Tag:'),
               const SizedBox(height: 8),
               AppTag('Offer', type: TagType.offer),
               const SizedBox(height: 16),
-
               const Text('Gray Tag:'),
               const SizedBox(height: 8),
               AppTag('Gray', type: TagType.gray),
               const SizedBox(height: 16),
-
               const Text('Chip Tag:'),
               const SizedBox(height: 8),
               AppTag(
@@ -88,7 +82,6 @@ class TagExamplePage extends StatelessWidget {
                 icon: const Icon(Icons.tag, size: 14),
               ),
               const SizedBox(height: 16),
-
               const Text('Rating Small Tag:'),
               const SizedBox(height: 8),
               AppTag('4.5', type: TagType.rateSmall),

@@ -19,10 +19,10 @@ class OfferTag extends StatelessWidget {
         child: Text(
           data,
           style: Theme.of(context).textTheme.bodySmall?.copyWith(
-            color: Colors.white,
-            fontWeight: FontWeight.w400,
-            fontSize: 14,
-          ),
+                color: Colors.white,
+                fontWeight: FontWeight.w400,
+                fontSize: 14,
+              ),
         ),
       ),
     );
